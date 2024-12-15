@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounced Movie Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #moviesList {
+      margin-top: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    #moviesList div {
+      padding: 5px;
+      cursor: pointer;
+    }
+    #moviesList div:hover {
+      background-color: #f0f0f0;
+    }
+    #movieDetails {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Movie Search</h1>
+  <input type="text" id="movieSearch" placeholder="Search for a movie..." />
+  <div id="moviesList"></div>
+  <div id="movieDetails"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
