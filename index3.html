@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Pagination System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #filters {
+      margin-bottom: 20px;
+    }
+
+    #searchInput {
+      margin-right: 10px;
+    }
+
+    #dataList {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .dataItem {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    #loading {
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Advanced Pagination System</h1>
+
+  <div id="filters">
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <select id="filterSelect">
+      <option value="">Select Category</option>
+      <option value="category1">Category 1</option>
+      <option value="category2">Category 2</option>
+      <option value="category3">Category 3</option>
+    </select>
+  </div>
+
+  <div id="dataList"></div>
+  <div id="loading">Loading...</div>
+
+  <script src="app2.js"></script>
+</body>
+</html>
